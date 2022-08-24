@@ -5,10 +5,13 @@ import { TransactionsContext } from "../../context/TransactionsContext";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionContainer, TransactionTable } from "./styles";
 import {dateFormatter, priceFormatter} from "../../utils/formatter"
+import { useContextSelector } from "use-context-selector";
 
 
 export function Transactions() {
-   const { transactions } = useContext(TransactionsContext)
+   const transactions = useContextSelector(TransactionsContext, (context) => {
+    return context.transactions
+   })
   return (
     <div>
       <Summary />
