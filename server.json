@@ -1,3 +1,20 @@
 {
-   "transactions":[]
+   "transactions":[
+      {
+         "id": 1,
+         "description":"Project",
+         "type": "income",
+         "category": "Work",
+         "price": 1500,
+         "createdAt": "2022-08-23T19:24:12.505Z"
+      },
+      {
+         "id": 2,
+         "description":"Mac Donald's",
+         "type": "outcome",
+         "category": "Food",
+         "price": 23,
+         "createdAt": "2022-08-22T19:24:12.505Z"
+      }
+   ]
 }
